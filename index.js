@@ -3,7 +3,7 @@ let userInput = document.getElementsByClassName('login-input')[0];
 let loginButton = document.getElementsByClassName('login-button')[0];
 let loginForm = document.getElementsByClassName('login-form')[0];
 
-let user = '';
+let user = false;
 
 function displayTime() {
     var str = "";
@@ -37,11 +37,6 @@ let sendButton_handler = () => {
     let message = `${chatWindow_input.value}___clientNik${user}`; 
     const ws = new WebSocket('ws://socket-backend-hw.herokuapp.com/');
     ws.binaryType = 'blob';
-
-    /*if (ws.readyState === WebSocket.OPEN) {
-        ws.send(message);
-    }
-    */
 
     ws.addEventListener('open', () => {
         console.log('connected');
@@ -90,7 +85,6 @@ let sendButton_handler = () => {
 }
 
 function domBuild (data, userValue) {
-
     let list = document.createElement('ul');
     list.classList.add('users-list');
     for (let i=0; i<data.length; i++) {

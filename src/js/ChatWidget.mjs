@@ -57,7 +57,7 @@ export default class ChatWidget {
   }
 
   connect() {
-    this.ws = new WebSocket(`ws://${this.url}ws`);
+    this.ws = new WebSocket(`wss://${this.url}ws`);
     this.ws.addEventListener('open', this.onConnectionOpened.bind(this));
     this.ws.addEventListener('message', this.onMessageRecieved.bind(this));
     this.ws.addEventListener('close', this.onConnectionClose.bind(this));

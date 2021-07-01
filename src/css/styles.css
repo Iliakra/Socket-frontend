@@ -248,7 +248,7 @@ table {
 
 .messages-container::-webkit-scrollbar-button:single-button:vertical:decrement {
   height: 15px;
-  background-image: url("images/up-arrow.png");
+  background-image: url("../../images/up-arrow.png");
   background-size: 10px;
   background-position: center;
   background-repeat: no-repeat;
@@ -256,7 +256,7 @@ table {
 
 .messages-container::-webkit-scrollbar-button:single-button:vertical:increment {
   height: 15px;
-  background-image: url("images/down-arrow.png");
+  background-image: url("../../images/down-arrow.png");
   background-size: 10px;
   background-position: center;
   background-repeat: no-repeat;

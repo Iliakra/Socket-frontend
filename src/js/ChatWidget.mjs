@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import formatDate from './formatDate.js';
+import formatDate from './formatDate.mjs';
 
 export default class ChatWidget {
   constructor(url, nickForm) {

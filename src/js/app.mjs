@@ -1,5 +1,5 @@
-import UserLoginForm from './UserLoginForm.js';
-import ChatWidget from './ChatWidget.js';
+import UserLoginForm from './UserLoginForm.mjs';
+import ChatWidget from './ChatWidget.mjs';
 
 const form = new UserLoginForm();
 form.bindToDOM(document.body);
